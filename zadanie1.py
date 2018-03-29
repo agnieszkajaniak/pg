@@ -50,7 +50,7 @@ def print_stats(stats):
     # wypisz naglowki kolumn
     print(" "*13 + " ".join(["%10s" % x for x in stats_names]))
     for key, value in stats.iteritems():
-        #wypisz nazwe wiersza a nastepnie wartosci statystyk odpowiednio sformatowane
+        # wypisz nazwe wiersza a nastepnie wartosci statystyk odpowiednio sformatowane
         print('%13s' % key + " ".join([('%10.1f' % value[x]) for x in stats_names]))
  
 data = read_file()
